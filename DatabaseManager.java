@@ -52,7 +52,7 @@ public class DatabaseManager {
 
    
     public static void saveAccount(Account account, String accountNumber, double openingDeposit) throws SQLException {
-        // Updated to include secondary_nin field optionally required for Joint Accounts
+        
         String sql = "INSERT INTO Accounts (account_number, first_name, last_name, nin, secondary_nin, email, "
                    + "phone_number, pin, dob, account_type, branch, opening_deposit) "
                    + "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
